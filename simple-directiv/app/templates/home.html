@@ -1,0 +1,5 @@
+<div ng-init="diseaseCtrl.getDiseases()" ng-show="headerCtrl.isActive('home')">
+  <section ng-repeat="disease in diseaseCtrl.diseases | limitTo: 25">
+    <h1><a href='' ng-click="headerCtrl.setActive('singleDisease'); diseaseCtrl.single=disease" >{{disease.disease}}</a></h1>
+  </section>
+</div>

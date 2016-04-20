@@ -1,0 +1,13 @@
+<div ng-show="headerCtrl.isActive('singleDisease')">
+  <h1>Reviews</h1>
+  <section ng-repeat="review in reviewCtrl.reviews">
+    <p>{{review.date}}</p>
+    <p>{{review.body}}</p>
+    <p>-{{review.name}}</p>
+  </section>
+  <section>
+    Name: <input type="text" ng-model="reviewCtrl.newReview.name" value="">
+    Review: <input type="text" ng-model="reviewCtrl.newReview.body" value="">
+    <button ng-click="reviewCtrl.submit()">Submit</button>
+  </section>
+</div>

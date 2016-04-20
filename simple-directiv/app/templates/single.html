@@ -1,0 +1,7 @@
+<section ng-show="headerCtrl.isActive('singleDisease')">
+  <h1>{{diseaseCtrl.single.disease}}</h1>
+  <p>
+    Total Reported Cases 2009: {{diseaseCtrl.single.total_cases_reported_2009 || 0}}
+  </p>
+  <section reviews></section>
+</section>
